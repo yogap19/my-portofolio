@@ -1,11 +1,15 @@
 import Layout from '../components/Layout';
 import Profile from './profile';
 import Descript from './descript';
+import ScoreList from './scoreList';
 export default function Home() {
   return (
     <Layout>
-      <Descript />
-      <Profile />
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-2">
+        <Descript />
+        <Profile />
+      </div>
+      <ScoreList />
     </Layout>
   );
 }

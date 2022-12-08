@@ -20,6 +20,15 @@ li {
   @apply mx-2 text-white uppercase font-semibold hover:font-bold hover:text-yellow-300;
 }
 
+th {
+  @apply text-white;
+}
+
+th,
+td {
+  @apply py-2 text-center font-semibold;
+}
+
 * {
   box-sizing: border-box;
 }

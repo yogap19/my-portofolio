@@ -12,31 +12,31 @@ export default function profile() {
     }, 5000);
   };
   return (
-    <div className="container">
+    <div className="flex mt-[15rem] xl:mt-0">
       <AiFillStar
         color="#fff"
-        size={500}
-        className="absolute right-[7rem] top-[6rem] blur-md"
-      />
-      <Image
-        src={boy}
-        style={{ width: 200, height: 400 }}
-        className="absolute right-[16rem] top-[6rem]"
+        style={{ height: 500, width: 500 }}
+        className="ml-[5rem] blur-md"
       />
       <button
         onClick={changeTextHandler}
-        className="border border-amber-800 text-amber-800 font-bold px-2 py-2 rounded-md max-w-fit absolute right-[7rem] top-[10rem] hover:bg-amber-800 hover:text-white active:bg-amber-900"
+        className="border border-amber-800 text-amber-800 font-bold px-2 py-2 rounded-md w-[15rem] h-fit hover:bg-amber-800 hover:text-white active:bg-amber-900 sm:mt-[5rem] sm:mr-[5rem]"
       >
         {text ? (
           <p>
             Hy, my name is <strong>Yoga</strong>
           </p>
         ) : (
-          <p className="max-w-[10rem]">
-            Do you want to know me more? let's scroll down
-          </p>
+          <p className="">Do you want to know me more? let's scroll down</p>
         )}
       </button>
+
+      <Image
+        src={boy}
+        style={{ width: 200, height: 350 }}
+        className="absolute ml-[13rem] mt-[2rem] md:ml-[12rem] xl:ml-[10rem]"
+        alt="My profile"
+      />
     </div>
   );
 }
