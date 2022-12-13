@@ -2,6 +2,7 @@ import Layout from '../components/Layout';
 import Profile from './profile';
 import Descript from './descript';
 import ScoreList from './scoreList';
+import Test from './test/table';
 export default function Home() {
   return (
     <Layout>

@@ -6,13 +6,13 @@ export default function Header() {
     <header className="bg-amber-800 shadow-md shadow-amber-500 flex justify-between">
       <ul className="flex bg-amber-800 px-2 sm:px-6 lg:px-8 py-2">
         <li>
-          <button>Profile</button>
+          <Link href="/">Profile</Link>
         </li>
         <li>
-          <button>Score List</button>
+          <Link href="/">Score List</Link>
         </li>
         <li>
-          <button>Address</button>
+          <Link href="/">Address</Link>
         </li>
       </ul>
       <h3 className="px-2 sm:px-6 lg:px-8 py-2 text-white font-bold">icon</h3>
