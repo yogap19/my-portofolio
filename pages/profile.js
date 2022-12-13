@@ -34,7 +34,7 @@ export default function profile() {
       <Image
         src={boy}
         style={{ width: 200, height: 350 }}
-        className="absolute ml-[13rem] mt-[2rem] md:ml-[12rem] xl:ml-[10rem]"
+        className="absolute ml-[11rem] mt-[2rem] md:ml-[9rem] xl:ml-[10rem]"
         alt="My profile"
       />
     </div>
