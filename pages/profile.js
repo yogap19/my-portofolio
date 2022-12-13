@@ -20,7 +20,7 @@ export default function profile() {
       />
       <button
         onClick={changeTextHandler}
-        className="border border-amber-800 text-amber-800 font-bold px-2 py-2 rounded-md w-[15rem] h-fit hover:bg-amber-800 hover:text-white active:bg-amber-900 sm:mt-[5rem] sm:mr-[5rem]"
+        className="outline-amber-800 text-amber-800 font-bold px-2 py-2 rounded-md w-[15rem] h-fit hover:bg-amber-800 hover:text-white active:bg-amber-900 sm:mt-[5rem] sm:mr-[5rem]"
       >
         {text ? (
           <p>
