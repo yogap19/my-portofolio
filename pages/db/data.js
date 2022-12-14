@@ -66,12 +66,76 @@ const data = {
       sks: 3,
       grade: 'A',
     },
+    {
+      id: 12,
+      subject: 'Komputer Dalam Masyarakat',
+      sks: 2,
+      grade: 'A',
+    },
+    {
+      id: 13,
+      subject: 'Komputer Grafik',
+      sks: 3,
+      grade: 'B',
+    },
+    {
+      id: 14,
+      subject: 'Sistem Operasi',
+      sks: 3,
+      grade: 'B',
+    },
+    {
+      id: 15,
+      subject: 'Rekayasa Perangkat Lunak',
+      sks: 4,
+      grade: 'A',
+    },
+    {
+      id: 16,
+      subject: 'Sistem Pendukung Keputusan',
+      sks: 2,
+      grade: 'A',
+    },
+    {
+      id: 17,
+      subject: 'Penjaminan Mutu Perangkat Lunak',
+      sks: 3,
+      grade: 'A',
+    },
+    {
+      id: 18,
+      subject: 'Teori Bahasa dan Otomata',
+      sks: 3,
+      grade: 'A',
+    },
+    {
+      id: 19,
+      subject: 'Pengolahan Citra',
+      sks: 2,
+      grade: 'B',
+    },
   ],
   headColumn: [
-    { heading: 'No', accessor: 'id' },
-    { heading: 'Subject', accessor: 'subject' },
-    { heading: 'SKS', accessor: 'sks' },
-    { heading: 'Grade', accessor: 'grade' },
+    {
+      Header: 'No',
+      Footer: 'No',
+      accessor: 'id',
+    },
+    {
+      Header: 'Subject',
+      Footer: 'Subject',
+      accessor: 'subject',
+    },
+    {
+      Header: 'SKS',
+      Footer: 'SKS',
+      accessor: 'sks',
+    },
+    {
+      Header: 'Grade',
+      Footer: 'Grade',
+      accessor: 'grade',
+    },
   ],
 };
 export default data;
