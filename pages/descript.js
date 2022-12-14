@@ -3,7 +3,7 @@ import React from 'react';
 export default function descript() {
   return (
     <div className="container">
-      <div className="absolute top-[10rem] left-[2rem]">
+      <div className="mx-[5rem] mt-[5rem]">
         <p className="text-amber-800 font-semibold max-w-3xl text-2xl">
           Hy, my name is <strong>Yoga Pramana</strong>, i am jurnior programmer,
           I am interested in becoming a web developer, do you want hire me ?

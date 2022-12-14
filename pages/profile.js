@@ -12,15 +12,15 @@ export default function profile() {
     }, 5000);
   };
   return (
-    <div className="flex mt-[15rem] xl:mt-0">
+    <div className="flex relative">
       <AiFillStar
-        color="#fff"
+        color="yellow"
         style={{ height: 500, width: 500 }}
-        className="ml-[5rem] blur-md"
+        className="ml-[5rem] blur-xl"
       />
       <button
         onClick={changeTextHandler}
-        className="outline-amber-800 text-amber-800 font-bold px-2 py-2 rounded-md w-[15rem] h-fit hover:bg-amber-800 hover:text-white active:bg-amber-900 sm:mt-[5rem] sm:mr-[5rem]"
+        className="card font-bold px-2 py-2 text-amber-900 rounded-md w-[15rem] h-fit hover:bg-amber-800 hover:text-white active:bg-amber-900 sm:mt-[5rem] sm:mr-[5rem]"
       >
         {text ? (
           <p>
@@ -37,6 +37,25 @@ export default function profile() {
         className="absolute ml-[11rem] mt-[2rem] xl:ml-[10rem]"
         alt="My profile"
       />
+      <div className="absolute mt-[10rem] left-5 card font-bold px-2 py-2 text-amber-900 rounded-md h-fit xl:top-0 xl:left-0">
+        <strong className="font-bol text-amber-900">Framework</strong>
+        <ul>
+          <li className="text-amber-900">React / Next</li>
+          <li className="text-amber-900">CodeIgniter</li>
+          <li className="text-amber-900">Laravel</li>
+        </ul>
+      </div>
+      <div className="absolute mt-[15rem] right-11 card font-bold px-2 py-2 text-amber-900 rounded-md h-fit xl:top-0">
+        <strong className="font-bol text-amber-900">
+          Programming Language
+        </strong>
+        <ul>
+          <li className="text-amber-900">html</li>
+          <li className="text-amber-900">css</li>
+          <li className="text-amber-900">javascript</li>
+          <li className="text-amber-900">php</li>
+        </ul>
+      </div>
     </div>
   );
 }

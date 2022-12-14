@@ -137,5 +137,37 @@ const data = {
       accessor: 'grade',
     },
   ],
+  historyOfEducation: [
+    {
+      Header: 'No',
+      accessor: 'id',
+    },
+    {
+      Header: 'School',
+      accessor: 'school',
+    },
+    {
+      Header: 'Year',
+      accessor: 'year',
+    },
+  ],
+  listSchool: [
+    {
+      school: 'SDN 1 Sukabirus',
+      years: '2003-2009',
+    },
+    {
+      school: 'SMPN 1 Dayeuhkolot',
+      years: '2009-2012',
+    },
+    {
+      school: 'SMKN 7 Baleendah',
+      years: '2012-2015',
+    },
+    {
+      school: 'STMIK Indonesia Mandiri',
+      years: '2017-2022',
+    },
+  ],
 };
 export default data;

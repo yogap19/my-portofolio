@@ -16,14 +16,34 @@ a {
   text-decoration: none;
 }
 
+thead {
+  @apply bg-amber-700;
+}
 li {
   @apply mx-2 text-white uppercase font-semibold hover:font-bold hover:text-yellow-300;
+}
+
+.button-fixed {
+  @apply bg-gray-700 text-white font-semibold px-2 py-1 rounded-md m-2 opacity-30 hover:opacity-50 active:bg-black focus:opacity-100;
 }
 
 th {
   @apply text-white;
 }
+.color-primary {
+  @apply bg-amber-50;
+}
 
+.card {
+  @apply mb-5 block rounded-lg border-gray-200 shadow-md shadow-amber-500;
+}
+.color-secondary {
+  @apply bg-amber-700;
+}
+
+.color-tertiery {
+  @apply bg-amber-400;
+}
 th,
 td {
   @apply py-2 text-center font-semibold;

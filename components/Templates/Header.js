@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 export default function Header() {
   return (
