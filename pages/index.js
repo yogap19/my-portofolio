@@ -4,12 +4,15 @@ import Descript from './descript';
 import ScoreList from './scoreList';
 import Curiculum from './cv';
 import Experience from './experience';
+import ChartScore from './chartScore';
+import Project from './project';
 import Test from './test/table';
 import { useRef } from 'react';
 
 export default function Home() {
   const score = useRef();
   const cv = useRef();
+  const project = useRef();
 
   const scrollHandler = (ref) => {
     window.scrollTo({
@@ -21,7 +24,7 @@ export default function Home() {
   return (
     <Layout>
       <div
-        className="grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-2"
+        className="grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2"
         ref={cv}
       >
         <Descript />
@@ -40,17 +43,27 @@ export default function Home() {
           onClick={() => scrollHandler(cv.current)}
           className="button-fixed"
         >
-          CV
+          CC
         </button>
         <button
           onClick={() => scrollHandler(score.current)}
           className="button-fixed"
         >
-          DNS
+          DNC
+        </button>
+        <button
+          onClick={() => scrollHandler(project.current)}
+          className="button-fixed"
+        >
+          PJC
         </button>
       </div>
-      <div ref={score}>
+      <div ref={score} className="grid grid-cols-1  mx-4">
         <ScoreList />
+        {/* <ChartScore /> */}
+      </div>
+      <div ref={project} className="mt-10">
+        {/* <Project /> */}
       </div>
     </Layout>
   );

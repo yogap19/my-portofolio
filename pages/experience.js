@@ -4,7 +4,13 @@ function experience() {
   const data = [
     {
       job: 'PT. Idar buana (textil)',
-      years: '2',
+      date: '2015-2017',
+      years: '2 Years',
+    },
+    {
+      job: 'Rastekid (Kerja Praktek)',
+      date: '2021-2021',
+      years: '3 Month',
     },
   ];
   return (
@@ -13,11 +19,8 @@ function experience() {
       <ul>
         {data.map((cel, key) => {
           return (
-            <li
-              className="text-amber-700 hover:font-bold hover:text-amber-900"
-              key={key}
-            >
-              {cel.job} ( {cel.years} Years)
+            <li className="text-amber-700 hover:text-amber-900" key={key}>
+              {cel.job} | {cel.date} ( {cel.years})
             </li>
           );
         })}

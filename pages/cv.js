@@ -9,10 +9,7 @@ function cv() {
       <ul>
         {data.map((cel, key) => {
           return (
-            <li
-              className="text-amber-700 hover:font-bold hover:text-amber-900"
-              key={key}
-            >
+            <li className="text-amber-700 hover:text-amber-900" key={key}>
               {cel.school} ( {cel.years} )
             </li>
           );

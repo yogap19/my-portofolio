@@ -8,7 +8,6 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  @apply bg-amber-50;
 }
 
 a {
@@ -20,11 +19,18 @@ thead {
   @apply bg-amber-700;
 }
 li {
-  @apply mx-2 text-white uppercase font-semibold hover:font-bold hover:text-yellow-300;
+  @apply mx-2 text-white uppercase font-semibold hover:text-yellow-300;
 }
 
 .button-fixed {
   @apply bg-gray-700 text-white font-semibold px-2 py-1 rounded-md m-2 opacity-30 hover:opacity-50 active:bg-black focus:opacity-100;
+}
+
+.button-primary {
+  @apply text-white outline-1 outline-amber-800 bg-amber-700 hover:bg-amber-800 active:bg-amber-900 px-2 py-1;
+}
+.button-disable {
+  @apply text-stone-700 outline-1 outline-amber-800 bg-stone-200 px-2 py-1;
 }
 
 th {
@@ -32,6 +38,10 @@ th {
 }
 .color-primary {
   @apply bg-amber-50;
+}
+
+.text-primary {
+  @apply text-amber-900 font-semibold;
 }
 
 .card {
